@@ -1,0 +1,335 @@
+*{
+    font-size: 1.25vw;
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  .stii{
+    background-color: black;
+}
+.seccionCarnet{
+    background-image: url(./img/redes.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: 5%;
+    padding: 15% 20% 20% 20%;
+    display: flex;
+    justify-content: center;
+}
+.contenedor{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+
+.box{
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.1);
+}
+.box1{
+    margin: 100px 40px;
+    color: azure;
+    transition: all 500ms;
+}
+.box1 h2, 
+.box1 button{
+    margin-top: 10px;
+    margin-left: 300px;
+}
+.box1 h2{
+    font-weight: 400;
+    font-size: 26px;
+}
+.box button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    transition: all 300ms;
+    margin-left: 330px;
+}
+
+.box button:hover{
+    background: #fff;
+    color: aqua;
+}
+.contenedor_data{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+}
+.contenedor_data form {
+    width: 100%;
+    padding: 50px 20px;
+    background:#fff;
+    position: absolute;
+    border-radius: 20px;
+}
+.contenedor_dating form{
+    width: 100%;
+    padding: 25px 20px;
+    background-image: url(./img/carnet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 20px;
+}
+.contenedor_data form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: cornflowerblue;
+}
+.contenedor_dating h4{
+    text-align: center;
+    color: rgb(39, 55, 83);
+}
+.contenedor_data i{
+    text-align: center;
+    color: rgb(68, 97, 151);
+}
+
+.contenedor_data form input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+.contenedor_data form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: cornflowerblue;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+#formulario_ini{
+    display: none;
+}
+#formulario_fin{
+    display:none;
+}
+input:invalid {
+    background-color:rgb(221, 189, 194);
+  }
+  
+  input:valid {
+    background-color:rgb(149, 221, 149);
+  }
+
+/*Calculadora Basica*/
+.basicCalculator{
+    background-image: url(./img/BasicCalculator.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20% 20% 20% 20%;
+}
+.bordex{
+    width: 100%;
+    padding: 40px 40px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.1);
+}
+#Numero1{
+    padding: 16px;
+    border-radius: 20px;
+    outline: none;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#Numero2{
+    padding: 16px;
+    border-radius: 20px;
+    outline: none;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+.advanceCalculator{
+    background-image: url(./img/fondo-galaxia-espacial_53876-93121.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20% 20% 20% 20%;
+}
+#suma{
+    border: none;
+    background-color: orangered;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 30px;
+}
+#suma:hover{
+    filter: brightness(30%);
+    transition: filter .50s;
+}
+#resta{
+    border: none;
+    background-color: orangered;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 30px;
+
+}
+#multiplicacion{
+    border: none;
+    background-color: orangered;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 30px;
+
+}
+#vaciar{
+    border: none;
+    background-color:aqua;
+    padding: 30px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#vaciar:hover{
+    filter: brightness(20%);
+    transition: filter .40s;
+}
+#division{
+    border: none;
+    background-color: orangered;
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 30px;
+
+}
+#resta:hover{
+    filter: brightness(20%);
+    transition: filter .40s;
+}
+#multiplicacion:hover{
+    filter: brightness(20%);
+    transition: filter .40s;
+}
+#division:hover{
+    filter: brightness(20%);
+    transition: filter .40s;
+}
+
+#igualdad{
+    border: none;
+    background-color: rgb(55, 52, 189);
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 30px;
+
+}
+#igualdad:hover{
+    filter: brightness(20%);
+    transition: filter .40s;
+}
+
+#op{
+    border: none;
+    background-color:rgb(156, 35, 35);
+    color: #fff;
+    padding: 30px 30px;
+    border-radius: 10px;
+
+}
+
+/*Calculadora avanzada*/
+
+.advanceCalculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    border: 1px solid grey;
+    border-radius: 20px;
+
+}
+.calculadora-d{
+    width: 100%;
+    text-align: right;
+    padding: 25px 15px;
+    border: 1px solid grey;
+    overflow-x: auto;
+    background-color:rgb(192, 169, 106);
+    border-radius: 20px;
+    font-size: 30px;
+}
+.calculadora-key{
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+
+}
+.key-num{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.key-butt{
+    width: 25%;
+    background-color: #fff;
+    border: 1px solid grey;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+}
+.key-butt1{
+    width: 50%;
+    background-color: rgb(92, 168, 126);
+    border: 1px solid grey;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+}
+.key-butt:hover{
+    filter: brightness(30%);
+    transition: filter .25s;
+}
+.key-butt1:hover{
+    background-color: rgb(196, 136, 58);
+    transition: filter .25s;
+}

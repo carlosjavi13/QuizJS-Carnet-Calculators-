@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.1-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand stii fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <div class="border border-warning p-1 rounded-4">
+            <a class="navbar-brand text-warning fw-bold" href="#">QUIZ JS</a>
+          </div>
+        </a>
+
+        <div id="navbarNavAltMarkup">
+          <div class="navbar-nav pb-2">
+            <a class="nav-link text-light ms-5 me-4" href="#"
+              >Generación de Carnet
+            </a>
+            <a class="nav-link text-light ms-5 me-4" href="#"
+              >Calculadora Básica</a
+            >
+            <a class="nav-link text-light ms-5 me-4" href="#"
+              >Calculadora Avanzada</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!--Generación de Carnet-->
+<section class="seccionCarnet">
+    <div class="contenedor">
+        <div class="box">
+            <div class="box1">
+                <h2>Generación de Carnet</h2>
+                <button id="btnData">Ingrese sus datos</button>
+            </div>
+        </div>
+
+        <div class="contenedor_data">
+            <form action="" id="formulario_fin" onsubmit="return capturaDatos();">
+                <h2>Ingrese Datos</h2>
+                    <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Nombre Completo" required>
+                    <input type="text" name="Apellidos" id="Apellidos" placeholder="Apellidos" required>
+                    <input type="number" name="Edad" id="Edad" placeholder="Edad" required>
+                    <input type="text" name="Cargo" id="Cargo" placeholder="Cargo" required>
+                    <input type="text" name="RH" id="RH" placeholder="RH" required>
+                    <input type="number" name="numeroDocumento" id="numeroDocumento" placeholder="numero Documento" required>
+                    <input type="tel" name="Telefono" id="Telefono" placeholder="Telefono" required>
+                    <button id="btnGener">Generar Carnet</button>
+            </form>
+            <div class="contenedor_dating">
+            <form action="" id="formulario_ini">
+                <h4>Identificación del Personal</h4>
+                <i>Carnet Personal</i>
+                <div id="information"></div>
+                  <!--<p><button onclick="emptyList();">Descargar</button></p>-->
+            </form>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="separador">
+    <h1>Calculadora Básica</h1>
+</div>
+
+    <!--Calculadora Básica-->
+
+    <section class="basicCalculator">
+        <div class="bordex">
+            <input type="text" name="" id="Numero1" placeholder="Ingrese el Numero 1" required>
+            <input type="text" id="Numero2" placeholder="Ingrese el Numero 2" required>
+            <h3>Ejecute la operación:</h3>
+        <button id="suma">+</button>
+        <button id="resta">-</button>
+        <button id="multiplicacion">*</button>
+        <button id="division">/</button>
+        <button id="igualdad">=</button>
+        <output id="op">Resultado</output>
+    <button id="vaciar">Clear</button>
+    </div>
+
+
+    </section>
+
+    <div class="separador">
+        <h1>Calculadora Avanzada</h1>
+    </div>
+    
+        <!--Calculadora Avanzada-->
+    
+        <section class="advanceCalculator">
+            <div class="calculadora">
+                <div class="calculadora-d">0</div>
+                <div class="calculadora-key">
+                    <div class="key-num">
+                        <div class="key-butt">%</div>
+                        <div class="key-butt key-butt1">C</div>
+                        <div class="key-butt">/</div>
+                        <div class="key-butt">7</div>
+                        <div class="key-butt">8</div>
+                        <div class="key-butt">9</div>
+                        <div class="key-butt">*</div>
+                        <div class="key-butt">4</div>
+                        <div class="key-butt">5</div>
+                        <div class="key-butt">6</div>
+                        <div class="key-butt">-</div>
+                        <div class="key-butt">1</div>
+                        <div class="key-butt">2</div>
+                        <div class="key-butt">3</div>
+                        <div class="key-butt">+</div>
+                        <div class="key-butt">.</div>
+                        <div class="key-butt">0</div>
+                        <div class="key-butt key-butt1">=</div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+    <script src="./bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
